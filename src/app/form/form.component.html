@@ -1,0 +1,43 @@
+<form [formGroup]="formGroup">
+  <div class="contenedorppal">
+    <div>
+      <label>Name: </label>
+      <input name="name" type="text" formControlName="name" />
+    </div>
+    <div>
+      <label>Email: </label>
+      <input name="email" type="email" formControlName="email" />
+    </div>
+    <div>
+      <label>Country: </label>
+      <input name="country" type="text" formControlName="country" />
+    </div>
+    <div>
+      <label>Comments: </label>
+      <input name="comments" type="text" formControlName="comments"/>
+    </div>
+    <div>
+      <button (click)="sendData()">Send</button>
+    </div>
+  </div>
+</form>
+
+<section *ngIf="formData" class="sectioncomments">
+  <h2>Tus comentarios han sido enviados exitosamente!!</h2>
+  <div>
+    <h3>Nombre</h3>
+    <p>{{formData.name}}</p>
+  </div>
+  <div>
+    <h3>Correo</h3>
+    <p>{{formData.email}}</p>
+  </div>
+  <div>
+    <h3>Pais</h3>
+    <p>{{formData.country}}</p>
+  </div>
+  <div>
+    <h3>Comentarios</h3>
+    <p>{{formData.comments}}</p>
+  </div>
+</section>

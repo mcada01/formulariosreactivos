@@ -1,0 +1,15 @@
+.contenedorppal {
+  padding: 20px;
+}
+
+label {
+  width: 100px;
+}
+
+button {
+  background: rgb(124, 124, 230);
+}
+
+.sectioncomments > div{
+    padding-left: 30px; 
+}
