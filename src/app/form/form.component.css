@@ -8,8 +8,13 @@ label {
 
 button {
   background: rgb(124, 124, 230);
+  width: 96%;
 }
 
-.sectioncomments > div{
+.sectioncomments > div {
     padding-left: 30px; 
+}
+
+div > input {
+  width: 70%;
 }
